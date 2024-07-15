@@ -14,17 +14,17 @@ const about = () => {
                 <AnimatedText text={"Passion Fuels Purpose!"} className='text-7xl' />
                 <div className='mt-10 flex justify-between'>
                     <div className='w-[47%]'>
-                        <h2 className='mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75'>About Me</h2>
+                        <h2 className='mb-4 text-xl font-bold uppercase text-dark/85 dark:text-light'>About Me</h2>
                         <p className='font-medium text-justify'>
                             - Hi, I'm Dushyant Bhutiyani! I'm a full-stack web developer with a strong passion for backend development.<br />
                             - I enjoy the challenge of building robust and scalable applications that power the functionality users see and interact with.
                         </p>
                     </div>
                     <div className='w-[48%] pl-2'>
-                        <h2 className='mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75 pl-3'>Education</h2>
+                        <h2 className='mb-4 text-xl font-bold uppercase text-dark/85 dark:text-light pl-3'>Education</h2>
                         <div className='flex'>
-                            -
-                            { <Image src={whiteHat} className='w-8 h-8 fill-white '/> }
+                            <span className='hidden dark:block'>-</span>
+                            <Image src={Hat} className='w-8 h-8 dark:hidden' />
                             <div className='font-medium text-justify ml-1'>
                                 <p>Madhav Institute of Technology & Science, Gwalior (M.P.)<br />
                                     Bachelor of Technology (B.Tech)<br />

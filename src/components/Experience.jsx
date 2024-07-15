@@ -2,16 +2,16 @@ import { motion, useScroll } from 'framer-motion'
 import React, { useRef } from 'react'
 import LiIcon from './LiIcon'
 
-const Details = ({ position, company, companyLink, time, address, work }) => {
+const Details = ({ position, company, companyLink, time, address, work, type }) => {
     const ref = useRef(null);
     return (
         <li ref={ref} className='my-8 first:mt-4 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between'>
             <LiIcon reference={ref} />
             <motion.div
-            initial={{y:50}}
-            whileInView={{y:0}}
-            transition={{duration:0.5, type:"spring" }}
-            className="">
+                initial={{ y: 50 }}
+                whileInView={{ y: 0 }}
+                transition={{ duration: 0.5, type: "spring" }}
+                className="">
                 <h3 className="capitalize font-bold text-2xl">
                     {position}&nbsp;
                     <a href={companyLink}
@@ -19,9 +19,9 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
                         className='text-primary dark:text-primaryDark capitalize'>@{company}</a>
                 </h3>
                 <span className="capitalize font-medium text-dark/75 dark:text-light/75">
-                    {time} | {address}
+                    {time} | {address} | {type}
                 </span>
-                <p className='font-medium w-full'>{work}</p>
+                <p className='font-medium w-full text-justify'>{work}</p>
             </motion.div>
         </li>
     )
@@ -44,17 +44,19 @@ const Experience = () => {
 
                 <motion.div
                     style={{ scaleY: scrollYProgress }}
-                    className="absolute left-9 top-2 w-[4px] h-full bg-dark origin-top dark:bg-light"></motion.div>
+                    className="absolute left-9 top-3 w-[4px] h-full bg-dark origin-top dark:bg-light"></motion.div>
 
                 <ul className='w-full flex flex-col items-start justify-between ml-4'>
-                    <Details position={"Software Engineer"}
-                        company={"Google"} companyLink={'www.google.com'}
-                        time={'2022-Present'} address={'Mountain View, CA'}
-                        work={"Worked on a team responsible for developing new features for Google's search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization."} />
-                    <Details position={"Software Engineer"}
-                        company={"Google"} companyLink={'www.google.com'}
-                        time={'2022-Present'} address={'Mountain View, CA'}
-                        work={"Worked on a team responsible for developing new features for Google's search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization."} />
+                    <Details position={"Backend Developer"}
+                        company={"Persistent Digital Commerce"} companyLink={'https://persistentdigitalcommerce.in/'}
+                        time={'July 2024 - Present'} address={'Gwalior, M.P'}
+                        work={'Contributing to backend development for the real-world project "PehchanKiDukan" , my responsibilities include enhancing database management, optimizing API functionalities, and ensuring seamless integration of new features to elevate user experience and operational efficiency.'}
+                        type={"On-site"} />
+                    <Details position={"Web Development Intern"}
+                        company={"InternPe"} companyLink={'https://internpe.in/'}
+                        time={'June 2023 - July 2023'} address={'Jaipur, Rajasthan'}
+                        work={"Collaborated on a full-stack web app addressing real-world problems using React.js, Tailwind for frontend and Redux for state management. Contributed to the design and implementation of RESTful APIs using Node.js and Express.js facilitating seamless communication between client-side and server-side components."}
+                        type={"Remote"} />
 
                 </ul>
             </div>
