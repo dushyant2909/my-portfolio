@@ -11,8 +11,8 @@ import lightBulb from '../../public/images/svgs/miscellaneous_icons_1.svg'
 export default function Home() {
   return (
     <>
-      <main className="flex items-center text-dark w-full min-h-screen border-b-black border-b-8">
-        <Layout className='pt-0 pb-10 px-[6rem]'>
+      <main className="flex items-center text-dark w-full min-h-screen border-b-black border-b-8 dark:text-light">
+        <Layout className='pt-[68px] pb-2 px-[6rem]'>
           <div className='flex items-center justify-between w-full'>
             <div className=''>
               <Image src={profilePic} alt='Dushyant Bhutiyani' className='w-full h-auto' />
@@ -23,10 +23,10 @@ export default function Home() {
               <div className='flex items-center self-start mt-2'>
                 <Link href={'/dummy.pdf'} target='_blank'
                   className='flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark
-                border border-solid border-transparent hover:border-dark transition-all'
+                border border-solid border-transparent hover:dark:bg-dark hover:dark:text-light hover:dark:border-light hover:border-dark dark:text-dark dark:bg-light'
                   download={true}>Resume <LinkArrow className={'w-6 ml-1'} /></Link>
                 <Link href={'mailto:dushyantb2003@gmail.com'}
-                  className='ml-4 texxt-lg font-medium capitalize text-dark underline'>Contact</Link>
+                  className='ml-4 texxt-lg font-medium capitalize text-dark underline dark:text-light'>Contact</Link>
               </div>
             </div>
           </div>

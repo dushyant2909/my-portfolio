@@ -17,7 +17,7 @@ export default function App({ Component, pageProps }) {
         <title>Dushyant Bhutiyani | Portfolio</title>
         <meta property="og:title" content="My page title" key="title" />
       </Head>
-      <main className={`${montserrat.variable} font-mont bg-light w-full min-h-screen`} >
+      <main className={`${montserrat.variable} dark:bg-dark font-mont bg-light w-full min-h-screen`} >
         <Navbar />
         <Component {...pageProps} />
       </main >
