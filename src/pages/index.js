@@ -11,7 +11,7 @@ import lightBulb from '../../public/images/svgs/miscellaneous_icons_1.svg'
 export default function Home() {
   return (
     <>
-      <main className="flex items-center text-dark w-full min-h-screen border-b-black border-b-8 dark:text-light">
+      <main className="flex items-center text-dark w-full min-h-screen dark:text-light">
         {/* <Layout className='pt-[68px] pb-2 px-[6rem]'> */}
         <Layout className='pt-0 md:pt-16 sm:pt-8 pb-2'>
           <div className='flex items-center justify-between w-full lg:flex-col'>

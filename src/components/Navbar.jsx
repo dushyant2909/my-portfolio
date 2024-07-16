@@ -48,7 +48,7 @@ const Navbar = () => {
     }
 
     return (
-        <header className='w-full px-20 py-6 font-medium flex items-center justify-between bg-light dark:bg-dark dark:text-light relative z-10 lg:px-16 md:px-12 sm:px-8'>
+        <header className='w-full px-20 py-6 font-medium flex items-center justify-between bg-light dark:bg-dark dark:text-light fixed z-10 lg:px-16 md:px-12 sm:px-8'>
 
             <button className='flex-col justify-center items-center hidden lg:flex' onClick={handleCLick}>
                 <span className={`bg-dark dark:bg-light transition-all duration-300 ease-out block h-0.5 w-6 rounded-sm ${isOpen ? 'rotate-45 translate-y-1' : '-translate-y-0.5'}`}></span>
@@ -59,30 +59,30 @@ const Navbar = () => {
 
             <div className='w-full flex justify-between items-center lg:hidden'>
                 <nav>
-                    <CustomLink href={'/'} title="Home" className={'mr-4'} />
-                    <CustomLink href={'/about'} title={"About"} className={'mx-4'} />
-                    <CustomLink href={'/projects'} title="Projects" className={'mx-4'} />
-                    <CustomLink href={'/certificates'} title="Certificates" className={'ml-4'} />
+                    <CustomLink href={'/'} title="Home" className={'mr-4 py-1'} />
+                    <CustomLink href={'/about'} title={"About"} className={'mx-4 py-1'} />
+                    <CustomLink href={'/projects'} title="Projects" className={'mx-4 py-1'} />
+                    <CustomLink href={'/certificates'} title="Certificates" className={'ml-4 py-1'} />
                 </nav>
 
                 <nav className='flex items-center justify-center flex-wrap '>
                     <motion.a href={'https://github.com/dushyant2909'} target='_blank'
                         whileHover={{ y: -2 }}
                         whileTap={{ scale: 0.9 }}
-                        className='w-6 mr-3'
+                        className='w-6 mr-4'
                     >
                         <GithubIcon />
                     </motion.a>
                     <motion.a href={'https://leetcode.com/Dushyant2909/'} target='_blank'
                         whileHover={{ y: -2 }}
                         whileTap={{ scale: 0.9 }}
-                        className='w-6 mr-3 dark:bg-light rounded-full'>
+                        className='w-6 mr-4 dark:bg-light rounded-full'>
                         <LeetcodeIcon />
                     </motion.a >
                     <motion.a href={'https://www.linkedin.com/in/dushyant-bhutiyani'} target='_blank'
                         whileHover={{ y: -2 }}
                         whileTap={{ scale: 0.9 }}
-                        className='w-6 mr-3'>
+                        className='w-6 mr-4'>
                         <LinkedInIcon />
                     </motion.a>
                     <motion.a href={'https://x.com/DushyantBh61730'} target='_blank'
@@ -122,20 +122,20 @@ const Navbar = () => {
                             <motion.a href={'https://github.com/dushyant2909'} target='_blank'
                                 whileHover={{ y: -2 }}
                                 whileTap={{ scale: 0.9 }}
-                                className='w-6 mr-3 sm:mx-1 bg-light rounded-full dark:bg-dark'
+                                className='w-6 mr-4 sm:mx-1 bg-light rounded-full dark:bg-dark'
                             >
                                 <GithubIcon />
                             </motion.a>
                             <motion.a href={'https://leetcode.com/Dushyant2909/'} target='_blank'
                                 whileHover={{ y: -2 }}
                                 whileTap={{ scale: 0.9 }}
-                                className='w-6 mr-3 dark:bg-light rounded-full sm:mx-1'>
+                                className='w-6 mr-4 bg-light rounded-full sm:mx-1'>
                                 <LeetcodeIcon />
                             </motion.a >
                             <motion.a href={'https://www.linkedin.com/in/dushyant-bhutiyani'} target='_blank'
                                 whileHover={{ y: -2 }}
                                 whileTap={{ scale: 0.9 }}
-                                className='w-6 mr-3 sm:mx-1'>
+                                className='w-6 mr-4 sm:mx-1'>
                                 <LinkedInIcon />
                             </motion.a>
                             <motion.a href={'https://x.com/DushyantBh61730'} target='_blank'
