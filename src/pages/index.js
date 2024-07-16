@@ -21,14 +21,14 @@ export default function Home() {
             </div>
             <div className='w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center'>
               <AnimatedText text={"Turning Vision Into Reality Through Code"} className='!text-6xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl' />
-              <p className='my-4 text-base font-medium md:text-sm sm:text-xs text-justify pr-10 md:pr-0'>As a dedicated full-stack web developer, I specialize in turning innovative ideas into functional and engaging web applications.<br /> Explore my latest projects and articles that showcase my expertise in web development.</p>
+              <p className='my-4 text-base font-medium md:text-sm sm:text-xs text-justify pr-10 md:pr-0'>As a dedicated full-stack web developer, I specialize in turning innovative ideas into functional and engaging web applications.<br className='lg:hidden' /> Explore my latest projects and articles that showcase my expertise in web development.</p>
               <div className='flex items-center self-start mt-2 md:mt-4 lg:self-center'>
                 <Link href={'/dummy.pdf'} target='_blank'
                   className='flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark
                 border border-solid border-transparent hover:dark:bg-dark hover:dark:text-light hover:dark:border-light hover:border-dark dark:text-dark dark:bg-light md:px-4 md:text-base'
                   download={true}>Resume <LinkArrow className={'w-6 ml-1'} /></Link>
                 <Link href={'mailto:dushyantb2003@gmail.com'}
-                  className='ml-4 texxt-lg font-medium capitalize text-dark underline md:text-base dark:text-green-500'>Contact</Link>
+                  className='ml-4 text-lg font-medium capitalize underline md:text-base dark:text-light text-dark'>Contact</Link>
               </div>
             </div>
           </div>

@@ -11,7 +11,7 @@ const Footer = () => {
                 </span>
                 <div className="flex items-center lg:py-2">
                     Build with
-                    <span className="text-primary text-2xl px-1 dark:text-primaryDark">♡</span>
+                    <span className="text-rose-600 text-2xl px-1 dark:text-primaryDark">♡</span>
                     by Dushyant Bhutiyani
                 </div>
 
