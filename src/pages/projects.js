@@ -4,7 +4,7 @@ import Layout from '@/components/Layout'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import project1 from "../../public/images/projects/crypto-screener-cover-image.jpg"
+import project1 from "../../public/images/projects/Medium_project_home_page.png"
 import { motion } from 'framer-motion'
 
 const FramerImage = motion(Image)
@@ -23,11 +23,11 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
             </Link>
 
             <div className='w-1/2 flex flex-col items-start justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6'>
-                <span className='text-primary font-medium text-xl dark:text-primaryDark xs:text-base'>{type}</span>
+                <span className='text-primary font-medium dark:text-primaryDark xs:text-base text-justify text-md'>{type}</span>
                 <Link href={link} target='_blank' className='hover:underline underline-offset-2'>
                     <h2 className='my-2 w-full text-left text-4xl font-bold dark:text-light sm:text-sm'>{title}</h2>
                 </Link>
-                <p className='my-2 font-medium text-dark dark:text-light sm:text-sm'>{summary}</p>
+                <p className='my-2 font-medium text-dark dark:text-light sm:text-sm text-justify'>{summary}</p>
                 <div className='mt-2 flex items-center'>
                     <Link href={github} target='_blank' className='w-10'>
                         <GithubIcon />
@@ -61,7 +61,7 @@ const Project = ({ title, type, img, link, github }) => {
                 <div className='w-full mt-2 flex items-center justify-between'>
                     <Link href={link} target='_blank'
                         className='text-lg font-semibold underline md:text-base'>
-                        Visit
+                        Visit project
                     </Link>
                     <Link href={github} target='_blank' className='w-8 md:w-6'>
                         <GithubIcon />
@@ -82,12 +82,12 @@ const projects = () => {
                 <div className='grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0'>
                     <div className='col-span-12'>
                         <FeaturedProject
-                            type={"Featured Project"}
-                            title={"Crypto Screener Application"}
-                            summary={"A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency."}
-                            link={"/"}
+                            type={"Cloudflare | Hono | Prisma | PostgreSQL | TypeScript | Zod Validation | React"}
+                            title={"Medium ‑ Unveiling the Art of Blogging"}
+                            summary={"Designed and implemented a serverless blogging application enabling users to publish, edit, and view blogs."}
+                            link={"https://medium-application-using-cloud-flare.vercel.app/"}
                             img={project1}
-                            github="https://github.com/example" // Replace with actual GitHub link
+                            github="https://github.com/dushyant2909/medium-application-using-cloudFlare" // Replace with actual GitHub link
                         />
                     </div>
                     <div className='col-span-6 sm:col-span-12'>
