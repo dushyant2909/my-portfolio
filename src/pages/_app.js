@@ -14,7 +14,7 @@ export default function App({ Component, pageProps }) {
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.png" />
+        <link rel="icon" href="/DB favicon.png" />
         <title>Dushyant Bhutiyani | Portfolio</title>
         <meta property="og:title" content="My page title" key="title" />
       </Head>

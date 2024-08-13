@@ -15,11 +15,11 @@ const about = () => {
                     <div className='w-[47%] sm:w-full'>
                         <h2 className='mb-4 text-xl font-bold uppercase text-dark/85 dark:text-light'>About Me</h2>
                         <p className='font-medium text-justify'>
-                            - Hi, I&apos;m Dushyant Bhutiyani! I&apos;m a full-stack web developer with a strong passion for backend development.<br />
+                            - Hi, I&apos; Dushyant Bhutiyani! I have a deep passion for web development, with a strong emphasis on building robust and efficient backend solutions.<br />
                         </p>
-                        <p className='mt-1 sm:mt-2 text-justify font-medium'>
+                        {/* <p className='mt-1 sm:mt-2 text-justify font-medium'>
                             - I enjoy the challenge of building robust and scalable applications that power the functionality users see and interact with.
-                        </p>
+                        </p> */}
                     </div>
                     <div className='w-[48%] pl-2 sm:pl-0 sm:w-full'>
                         <h2 className='mb-4 text-xl font-bold uppercase text-dark/85 dark:text-light sm:pl-0 pl-3'>Education</h2>

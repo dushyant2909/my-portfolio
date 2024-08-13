@@ -5,6 +5,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import project1 from "../../public/images/projects/Medium_project_home_page.png"
+import musicProject from "../../public/images/projects/Music_course_landing_page.png"
 import { motion } from 'framer-motion'
 
 const FramerImage = motion(Image)
@@ -92,12 +93,11 @@ const projects = () => {
                     </div>
                     <div className='col-span-6 sm:col-span-12'>
                         <Project
-                            type={"Featured Project"}
-                            title={"Crypto Screener Application"}
-                            summary={"A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency."}
-                            link={"/"}
-                            img={project1}
-                            github="https://github.com/example" // Replace with actual GitHub link
+                            type={"Nextjs | TypeScript | Aceternity UI"}
+                            title={"Music Course Landing Page"}
+                            link={"https://music-academy-frontend-using-next.vercel.app/"}
+                            img={musicProject}
+                            github="https://github.com/dushyant2909/Music-academy-frontend-using-Next" // Replace with actual GitHub link
                         />
                     </div>
                     <div className='col-span-6 sm:col-span-12'>
